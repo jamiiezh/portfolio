@@ -1,0 +1,272 @@
+@font-face {
+font-family: Lato;
+/* src: url(../font/Roboto/Roboto-Regular.ttf); */
+src:url(../font/Lato/Lato-Regular.ttf);
+src:url(../font/Lato/Lato-Light.ttf);
+}
+
+body {
+  font-family: Lato-Regular, Helvetica, sans-serif;
+  padding: 2rem;
+}
+
+section:not([id]) {
+  margin: 1em 0;
+  padding: 0.5em 0;
+  border-top: 1px solid #333;
+  min-height: 300px;
+}
+
+section h3 {
+  margin-bottom: 1em;
+}
+
+section p {
+  margin-top: 0;
+}
+
+section code {
+  background-color: #EEE;
+  padding: 0.25em 0.25em;
+}
+
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+}
+
+p, ol, ul {
+	max-width: 30rem;
+}
+
+/*
+  INTERACTIVE ELEMENTS -------------------
+*/
+
+/* Styling for the navigation button */
+
+.nav li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #ddd;
+    border-bottom:2px solid black;
+}
+
+li a.active {
+    color: #F89406;
+    border-bottom:2px solid black;
+}
+
+/* Styling for the navigation button */
+.button-nav {
+  display: inline-block;
+  padding: 1em 1.5em;
+  color: #fff;
+  background-color: #F89406;
+  border:none;
+  color:white;
+  text-align: center;
+  font-size:16px;
+  margin:4px 2px;
+  text-decoration: none;
+  -webkit-transition-duration: background-color 0.4s ease-out; /* Safari */
+   transition-duration: background-color 0.4s ease-out;
+   cursor: pointer;
+  /* -webkit-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out; */
+}
+
+.button-nav:hover, .button-nav:focus {
+  background-color: #F89406;
+  color:white;
+}
+.button-nav {
+    background-color: white;
+    color: black;
+    border: 2px solid #F89406;
+}
+
+/*
+  TEXT ELEMENTS -------------------
+*/
+
+/* Styling for the in-text link */
+.in-text-link {
+  position: relative;
+  color: #F89406;
+  text-decoration: none;
+  padding:.25em;
+}
+
+.in-text-link:hover {
+  color: #000;
+}
+
+.in-text-link:before {
+  color: #000;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #F89406;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.in-text-link:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+/* Styling for the Text input */
+input[type=text] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+input[type=text]:focus {
+    border: 3px solid #F89406;
+}
+
+/* Styling for the Heading */
+h1{
+  font-family: Lato-Light, Helvetica, sans-serif;
+  text-transform: uppercase;
+  color:#4A4A4A;
+  font-size: 2em;
+}
+
+h2{
+  font-family: Lato-Regular, Helvetica, sans-serif;
+  color:#4A4A4A;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+h3{
+  color:#000000;
+  font-weight: bold;
+}
+
+/* Styling for the Body text */
+p{
+  font-family: Roboto-Regular, Helvetica, sans-serif;
+  color:#324354;
+  font-weight: normal;
+  line-height: 1.6;
+}
+
+ol{
+  color: #000000;
+  font-weight: normal;
+}
+
+/*
+  COMBINED ELEMENTS -------------------
+*/
+
+div.figure {
+  float: left;
+  width: 30%;
+  border: thin silver solid;
+  margin: 0.5em;
+  padding: 0.5em;
+  text-align: center;
+  font-style: italic;
+  font-size: smaller;
+  text-indent: 0;
+}
+img.scaled {
+  width: 100%;
+}
+
+div.photos {
+  float: left;
+  width: 15%;
+  border: thin silver solid;
+  margin: 0.5em;
+  padding: 0.5em;
+  text-align: center;
+  font-style: italic;
+  font-size: smaller;
+  text-indent: 0;
+}
+
+section {
+  overflow: hidden
+}
+
+
+.grid{
+  width: 50px;
+  height: 100px;
+  float:left;
+  background-color: #F89406;
+  border: 1px solid black;
+  color:#F89406;
+  margin:1em;
+}
+
+/*color*/
+.white{
+  width: 100px;
+  height: 50px;
+  float:left;
+  background-color: #fff;
+  border: 1px solid black;
+  color:#fff;
+}
+
+.lightgrey{
+  width: 100px;
+  height: 50px;
+  float:left;
+  background-color: #ddd;
+  border: 1px solid black;
+  color:#ddd;
+}
+
+.orange{
+  width: 100px;
+  height: 50px;
+  float:left;
+  background-color: #F89406;
+  border: 1px solid black;
+  color:#F89406;
+}
+
+.black{
+  width: 100px;
+  height: 50px;
+  float:left;
+  background-color: #000;
+  border: 1px solid black;
+  color:#000;
+}
