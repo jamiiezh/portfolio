@@ -1,0 +1,364 @@
+@font-face {
+font-family: Lato;
+/* src: url(../font/Roboto/Roboto-Regular.ttf); */
+src:url(../font/Lato/Lato-Regular.ttf);
+src:url(../font/Lato/Lato-Light.ttf);
+}
+
+body,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
+section:not([id]) {
+  margin: 1em 0;
+  padding: 0.5em 0;
+  border-top: 1px solid #333;
+  min-height: 300px;
+}
+
+section h3 {
+  margin-bottom: 1em;
+}
+
+section p {
+  margin-top: 0;
+}
+
+section code {
+  background-color: #EEE;
+  padding: 0.25em 0.25em;
+}
+
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Lato-Regular', sans-serif;
+}
+
+p, ol, ul {
+	max-width: 30rem;
+}
+
+/*
+  INTERACTIVE ELEMENTS -------------------
+*/
+
+/* Styling for the navigation button */
+
+
+
+/*Navigation Menu*/
+.nav-right{
+  text-align: right;
+  width: 100%;
+  font-family: 'Lato-Regular', sans-serif;
+}
+
+ul{
+  list-style-type: none;
+  padding-right: 1em;
+}
+
+.nav li{
+  display: inline;
+  float:right;
+}
+
+.nav li a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+
+/* Styling for the navigation button */
+.button-nav {
+  display: inline-block;
+  padding: 1em 1.5em;
+  color: #fff;
+  background-color: #F89406;
+  border:none;
+  color:white;
+  text-align: center;
+  font-size:16px;
+  margin:4px 2px;
+  text-decoration: none;
+  -webkit-transition-duration: background-color 0.4s ease-out; /* Safari */
+   transition-duration: background-color 0.4s ease-out;
+   cursor: pointer;
+  /* -webkit-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out; */
+}
+
+.button-nav:hover, .button-nav:focus {
+  background-color: #F89406;
+  color:white;
+}
+.button-nav {
+    background-color: white;
+    color: black;
+    border: 2px solid #F89406;
+}
+
+/*
+  TEXT ELEMENTS -------------------
+*/
+
+/* Styling for the in-text link */
+.in-text-link {
+  position: relative;
+  color: #F89406;
+  text-decoration: none;
+  padding:.25em;
+}
+
+.in-text-link:hover {
+  color: #000;
+}
+
+.in-text-link:before {
+  color: #000;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #F89406;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.in-text-link:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+/* Styling for the Text input */
+input[type=text] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+input[type=text]:focus {
+    border: 3px solid #F89406;
+}
+
+/* Styling for the Heading */
+h1{
+  font-family: Lato-Light, Helvetica, sans-serif;
+  text-transform: uppercase;
+  color:#4A4A4A;
+  font-size: 2em;
+}
+
+h2{
+  font-family: Lato-Regular, Helvetica, sans-serif;
+  color:#4A4A4A;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+h3{
+  color:#000000;
+  font-weight: bold;
+}
+
+/* Styling for the Body text */
+p{
+  font-family: Lato-Regular, Helvetica, sans-serif;
+  color:#324354;
+  font-weight: normal;
+  line-height: 1.6;
+  max-width: 25%;
+
+}
+
+ol{
+  list-style-type: upper-roman;
+  color: #000000;
+  font-weight: normal;
+}
+
+/*
+  COMBINED ELEMENTS -------------------
+*/
+
+/*Gallery*/
+.first-row,.second-row{
+  display:flex;
+  display: -webkit-flex; /* Safari */
+  flex-direction:row;
+  align-items:center;
+}
+
+.first-row div{
+  flex:1;
+}
+
+.second-row div{
+  flex:1;
+}
+
+img{
+  width:100%;
+}
+
+/*try to reduce the gap between two rows, but doesnt work*/
+.gallery{
+  flex-direction: column;
+}
+
+/*Gallery Overlay*/
+.img1,.img2,.img3,.img4,.img5,.img6 {
+    position: relative;
+    width: 50%;
+}
+
+.image1,.image2,.image3,.image4,.image5,.image6 {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.overlay {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+.img1:hover .image1 {
+  opacity: 0.3;
+}
+
+.img2:hover .image2 {
+  opacity: 0.3;
+}
+
+.img3:hover .image3 {
+  opacity: 0.3;
+}
+
+.img4:hover .image4 {
+  opacity: 0.3;
+}
+
+.img5:hover .image5 {
+  opacity: 0.3;
+}
+
+.img6:hover .image6 {
+  opacity: 0.3;
+}
+
+.img1:hover .overlay {
+  opacity: 1;
+}
+
+.img2:hover .overlay {
+  opacity: 1;
+}
+
+.img3:hover .overlay {
+  opacity: 1;
+}
+
+.img4:hover .overlay {
+  opacity: 1;
+}
+
+.img5:hover .overlay {
+  opacity: 1;
+}
+
+.img6:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+section {
+  overflow: hidden
+}
+
+
+.grid{
+  width: 50px;
+  height: 100px;
+  float:left;
+  background-color: #F89406;
+  border: 1px solid black;
+  color:#F89406;
+  margin:1em;
+}
+
+/*color*/
+.white{
+  width: 100px;
+  height: 50px;
+  float:left;
+  background-color: #fff;
+  border: 1px solid black;
+  color:#fff;
+}
+
+.lightgrey{
+  width: 100px;
+  height: 50px;
+  float:left;
+  background-color: #ddd;
+  border: 1px solid black;
+  color:#ddd;
+}
+
+.orange{
+  width: 100px;
+  height: 50px;
+  float:left;
+  background-color: #F89406;
+  border: 1px solid black;
+  color:#F89406;
+}
+
+.black{
+  width: 100px;
+  height: 50px;
+  float:left;
+  background-color: #000;
+  border: 1px solid black;
+  color:#000;
+}

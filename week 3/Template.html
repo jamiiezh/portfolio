@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Guide Template</title>
+    <link href="css/template.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <h1>Portfolio Style Guide Template</h1>
+    <p>A template you can use to start building out your own style guides with.</p>
+
+    <nav class="nav-main box">
+      <p>
+        Go to:
+        <a href="portfolio.html">Home</a>
+        <a href="about.html">About Me</a>
+            </p>
+    </nav>
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
+      <!-- Default Button styling section -->
+      <section>
+        <h2>Navigation Button</h2>
+        <h3>CSS selector:</h3>
+        <p>.button-nav</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;a class="button" href="#" &gt;button&lt;/a&gt;</code>
+
+        <h3>Rendered element:</h3>
+        <a class="button-nav" href="#">See more</a>
+      </section>
+
+      <!-- In-text Link styling section -->
+      <section>
+        <h2>In-text link</h2>
+        <h3>CSS selector:</h3>
+        <p>a</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;a href="#interactive_elements"&gt;Go to interactive elements&lt;/a&gt;</code>
+
+        <h3>Render element:</h3>
+					<p><a class="in-text-link" href="#interactive_elements">Go to interactive elements</a></p>
+      </section>
+
+        <!-- Submit Button styling section -->
+      <section>
+        <h2>Submit/Reset Buttons</h2>
+          <h3>CSS selector:</h3>
+          <p>.button-nav</p>
+
+          <h3>Sample code:</h3>
+          <code>&lt;button class="button"&gt;Submit&lt;button&gt;</code>
+
+          <h3>Rendered element:</h3>
+          <button class="button-nav">Submit</button>
+      </section>
+
+      <!-- Text Input styling section -->
+      <section>
+        <h2>Text Input Field</h2>
+        <h3>CSS selector:</h3>
+        <p>form</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;form&gt;Text Input Box:&lt;br&gt; &lt;input type="text" name="input"&gt; &lt;/form&gt;</code>
+
+        <h3>Rendered element:</h3>
+        <form>Text Input Box:<br>
+          <input type="text" name="input">
+        </form>
+      </section>
+
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements">
+      <!-- heading styling section -->
+      <section>
+        <h2>Headings</h2>
+        <h3>CSS selector:</h3>
+        <p>h1</p>
+        <p>h2</p>
+        <p>h3</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;h1&gt;Heading 1&lt;/h1&gt;</code>
+        <code>&lt;h2&gt;Heading 2&lt;/h2&gt;</code>
+        <code>&lt;h3&gt;Heading 3&lt;/h3&gt;</code>
+        <code>&lt;h4&gt;Heading 4&lt;/h4&gt;</code>
+
+        <h3>Rendered element:</h3>
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 3</h4>
+      </section>
+
+      <!-- Paragraphs styling section -->
+      <section>
+        <h2>Paragraphs</h2>
+        <h3>CSS selector:</h3>
+       <p>p</p>
+
+       <h3>Sample code:</h3>
+       <code>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.&lt;p&gt;</code>
+
+       <h3>Rendered element:</h3>
+       <p>Body text: Lorem ipsum dolor sit amet, dictum arcu sem aliquam congue lobortis, etiam ultrices tortor at elementum. Dapibus nulla cras nascetur, aliquam ullamcorper dignissim quam nullam justo malesuada. Nunc praesent sed dis scelerisque. Voluptatem elit ut integer ante massa, facilisi egestas placerat at litora id donec, in justo. Vel ipsum feugiat odio, tincidunt quis vestibulum aenean, mi nibh suspendisse vivamus vivamus, praesent sodales mauris, nisl integer adipisci a ultricies. Natoque felis vivamus, urna vivamus mauris quas vivamus cursus, id aliquam pulvinar nec pharetra ante sed, in venenatis nullam vel viverra. Vel imperdiet quam gravida, nulla nam magna, elit sem morbi proin vel amet, mi velit dui vestibulum justo arcu eu.</p>
+    </section>
+
+      <!-- Bulleted Lists styling section -->
+      <section>
+        <h2>Bulleted Lists</h2>
+        <h3>CSS selector:</h3>
+        <p>.lists</p>
+
+       <h3>Sample code:</h3>
+       <code>&lt;ul class="lists"&gt;
+         &lt;li&gt;lorem&lt;/li&gt;
+         &lt;li&gt;ipsum&lt;/li&gt;
+         &lt;li&gt;dolor&lt;/li&gt;
+         &lt;li&gt;amet&lt;/li&gt;
+         &lt;li&gt;sed&lt;/li&gt;
+        &lt;li&gt;labore&lt;/li&gt;
+         &lt;/ul&gt;</code>
+
+       <h3>Rendered element:</h3>
+        <ul class="lists">
+          <li>lorem </li>
+          <li>ipsum </li>
+          <li>dolor </li>
+          <li>amet </li>
+          <li>sed </li>
+          <li>labore </li>
+        </ul>
+      </section>
+
+      <!-- Numbered Lists styling section -->
+      <section>
+        <h2>Numbered Lists</h2>
+        <h3>CSS selector:</h3>
+          <p>ol</p>
+
+       <h3>Sample code:</h3>
+       <code>&lt;ol&gt;
+         &lt;li&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/li&gt;
+         &lt;li&gt;Consectetur adipiscing elit, aenean euismod bibendum laoreet&lt;/li&gt;
+         &lt;li&gt;Proin gravida dolor sit amet lacus, accumsan et viverra justo commodo.&lt;/li&gt;
+         &lt;li&gt;Proin sodales pulvinar sic tempor, sociis natoque penatibus et magnis.&lt;/li&gt;
+         &lt;li&gt;Luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin.&lt;/li&gt;
+         &lt;/ol&gt;</code>
+
+       <h3>Rendered element:</h3>
+        <ol>
+          <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+          <li> Consectetur adipiscing elit, aenean euismod bibendum laoreet</li>
+          <li> Proin gravida dolor sit amet lacus, accumsan et viverra justo commodo. </li>
+          <li> Proin sodales pulvinar sic tempor, sociis natoque penatibus et magnis. </li>
+          <li> Luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin. </li>
+        </ol>
+      </section>
+
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+      <!-- Main Navigation styling section -->
+      <section>
+        <h2>Main Navigation</h2>
+        <h3>CSS selector:</h3>
+       <p>.nav</p>
+
+       <h3>Sample code:</h3>
+       <code>&lt;nav class="nav"&gt;
+         &lt;a class="nav" href="#home"&gt;Work&lt;/a&gt;
+         &lt;a class="nav" href="#aboutMe"&gt;About&lt;/a&gt;
+       &lt;/nav&gt;</code>
+
+       <h3>Rendered element:</h3>
+       <div class="nav-right">
+           <ul class="nav">
+              <li class="nav-work"><a href="#work">Work</a></li>
+              <li class="nav-about"><a href="about.html">About</a></li>
+
+           </ul>
+       </div>
+      </section>
+
+      <!-- Project Listing styling section -->
+      <section>
+        <h2>Project Listing</h2>
+        <h3>CSS selector:</h3>
+       <p>.photos</p>
+
+       <h3>Sample code:</h3>
+       <code>&lt;div class="photos"&gt;
+          &lt;img class=scaled src="img/print.jpg alt="Project1"&gt;
+            &lt;p&gt;Project1&lt;p&gt;
+            &lt;/div&gt;
+
+          &lt;div class="photos"&gt;
+            &lt;img class=scaled src="img/ux.jpg alt="Project2"&gt;
+            &lt;p&gt;Project2&lt;p&gt;
+            &lt;/div&gt;
+
+          &lt;div class="photos"&gt;
+            &lt;img class=scaled src="img/ui.jpg alt="Project3"&gt;
+            &lt;p&gt;Project3&lt;p&gt;
+            &lt;/div&gt;
+
+          &lt;div class="photos"&gt;
+            &lt;img class=scaled src="img/print.jpg alt="Project4"&gt;
+            &lt;p&gt;Project4&lt;p&gt;
+            &lt;/div&gt;
+
+          &lt;div class="photos"&gt;
+            &lt;img class=scaled src="img/graphic.jpg alt="Project5"&gt;
+            &lt;p&gt;Project5&lt;p&gt;
+            &lt;/div&gt;
+
+          &lt;div class="photos"&gt;
+            &lt;img class=scaled src="img/graphic.jpg alt="Project5"&gt;
+            &lt;p&gt;Project6&lt;p&gt;
+            &lt;/div&gt;
+        </code>
+
+   <h3>Rendered element:</h3>
+   <!-- Work gallery -->
+   <section id="work">
+     <div class="gallery">
+       <div class="first-row">
+           <div class="img1">
+             <a href ="project1.html">
+               <img src="img/print.jpg" class="image1" alt="The mist over the mountains">
+                   <div class="overlay">
+                     <div class="text">Company Branding</div>
+                   </div>
+                 </a>
+           </div>
+
+           <div class="img2">
+             <a href ="project2.html">
+               <img src="img/ui.jpg" class="image2" alt="Coffee beans" onclick="project2.html">
+                   <div class="overlay">
+                     <div class="text">Project Research</div>
+                   </div>
+             </a>
+           </div>
+
+           <div class="img3">
+             <a href ="project1.html">
+               <img src="img/ux.jpg" class="image3" alt="ux" onclick="work.html">
+                 <div class="overlay"onclick="work.html">
+                   <div class="text" onclick="work.html">Game Design</div>
+                 </div>
+               </a>
+           </div>
+         </div>
+
+       <div class="second-row">
+           <div class="img4">
+             <a href ="project2.html">
+               <img src="img/ui.jpg" class="image4" alt="ui">
+                 <div class="overlay">
+                   <div class="text">Interface Design</div>
+                 </div>
+               </a>
+           </div>
+
+           <div class="img5">
+             <a href ="project2.html">
+               <img src="img/ux.jpg" class="image5" alt="ux">
+                 <div class="overlay">
+                   <div class="text">Interaction Design</div>
+                 </div>
+               </a>
+           </div>
+
+           <div class="img6">
+             <a href ="project2.html">
+               <img src="img/print.jpg" class="image6" alt="print">
+                 <div class="overlay">
+                   <div class="text">App Development</div>
+                 </div>
+               </a>
+           </div>
+       </div>
+     </div>
+   </section>
+      </section>
+
+    </section>
+    <!-- // COMBINED ELEMENTS SECTION -->
+
+    <section>
+            <h2>Grid structure</h2>
+            <h3>CSS selector:</h3>
+            <p>.grid</p>
+
+            <h3>Sample code:</h3>
+            <code>
+                &lt;div class="grid"&gt;
+                  &lt;p&gt;1&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class="grid"&gt;
+                  &lt;p&gt;2&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class="grid"&gt;
+                  &lt;p&gt;3&lt;/p&gt;
+              </code>
+
+            <h3>Rendered element:</h3>
+
+            <div class="grid">
+                <p>1</p>
+              </div>
+              <div class="grid">
+                <p>2</p>
+              </div>
+              <div class="grid">
+                <p>3</p>
+              </div>
+          </section>
+
+
+    <section>
+      <h2> Color Palette</h2>
+      <h3>CSS selector:</h3>
+       <p>.white</p>
+       <p>.lightgrey</p>
+       <p>.orange</p>
+       <p>.black</p>
+
+       <h3>Sample code:</h3>
+       <code>
+       &lt;div class="color"&gt;
+         &lt;div class="white"&gt;
+           &lt;p>white&lt;/p&gt;
+         &lt;/div>
+         &lt;div class="lightgrey"&gt;
+           &lt;p>light grey&lt;/p&gt;
+         &lt;/div>
+         &lt;div class="orange"&gt;
+           &lt;p>orange&lt;/p&gt;
+         &lt;/div>
+         &lt;div class="black"&gt;
+           &lt;p>black&lt;/p&gt;
+         &lt;/div>
+
+       </code>
+
+       <h3>Rendered element:</h3>
+      <div class="color">
+            <div class="white">
+              <p>white</p>
+            </div>
+
+            <div class="lightgrey">
+              <p>light grey</p>
+            </div>
+
+            <div class="orange">
+              <p>orange</p>
+            </div>
+
+            <div class="black">
+              <p>black</p>
+            </div>
+          </div>
+
+</section>
+  </body>
+</html>
